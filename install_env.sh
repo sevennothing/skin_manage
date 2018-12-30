@@ -34,7 +34,6 @@ flask/bin/pip install freeze
 
 
 
-
 #### database install  ###
 mysql -u root -p
 

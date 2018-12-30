@@ -15,6 +15,7 @@ class Config(object):
 	#SQLALCHEMY_DATABASE_URI = 'mysql://root:18208158923@localhost:3306/skin_db?charset=utf8mb4'
 	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
 	SQLALCHEMY_MIGRATE_REPO = 'app.db'
+	SQLALCHEMY_DATABASE_URI = 'mysql://root:18208158923@localhost:3306/skin_db?charset=utf8mb4'
 	SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 	MAIL_SERVER = os.environ.get('MAIL_SERVER')
 	MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
